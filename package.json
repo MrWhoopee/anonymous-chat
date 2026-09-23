@@ -5,6 +5,7 @@
     "node": ">=22"
   },
   "workspaces": [
+    "client",
     "server"
   ],
   "scripts": {
