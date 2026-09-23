@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+
+# env files (examples are committed)
+.env
+.env.*
+!.env.example
+
+# Firebase service-account keys
+*-firebase-adminsdk-*.json
+service-account*.json
