@@ -1,3 +1,5 @@
+import { ChatRoom } from './components/ChatRoom';
+
 export function App() {
-  return <h1>Anonymous Chat</h1>;
+  return <ChatRoom />;
 }
