@@ -26,7 +26,7 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): Config {
       projectId: env.FIREBASE_PROJECT_ID!,
       clientEmail: env.FIREBASE_CLIENT_EMAIL!,
       // .env files store the key on one line with literal "\n" sequences
-      privateKey: env.FIREBASE_PRIVATE_KEY!.replace(/\n/g, '\n'),
+      privateKey: env.FIREBASE_PRIVATE_KEY!.replace(/\\n/g, '\n'),
     },
   };
 }

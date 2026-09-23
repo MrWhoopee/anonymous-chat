@@ -4,7 +4,7 @@ import { loadConfig } from './config.js';
 const validEnv = {
   FIREBASE_PROJECT_ID: 'anonymous-chat-4d8fd',
   FIREBASE_CLIENT_EMAIL: 'svc@anonymous-chat-4d8fd.iam.gserviceaccount.com',
-  FIREBASE_PRIVATE_KEY: '-----BEGIN PRIVATE KEY-----\nABC\n-----END PRIVATE KEY-----\n',
+  FIREBASE_PRIVATE_KEY: '-----BEGIN PRIVATE KEY-----\\nABC\\n-----END PRIVATE KEY-----\\n',
 };
 
 describe('loadConfig', () => {
@@ -16,7 +16,7 @@ describe('loadConfig', () => {
     expect(config.firebase.clientEmail).toBe(validEnv.FIREBASE_CLIENT_EMAIL);
   });
 
-  it('converts escaped \n in the private key into real newlines', () => {
+  it('converts escaped \\n in the private key into real newlines', () => {
     const config = loadConfig(validEnv);
 
     expect(config.firebase.privateKey).toBe(
