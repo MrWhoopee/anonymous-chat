@@ -182,7 +182,9 @@ No CORS configuration is needed.
 ### Styling
 
 Plain CSS, no UI library. Centered chat card; own messages right-aligned
-with a distinct color.
+with a distinct color. Dark theme only: deep navy → purple gradients,
+restrained (no heavy effects). Styling is done with the
+`frontend-design` skill at implementation time.
 
 ### Tests (Vitest + React Testing Library, Firebase mocked)
 
